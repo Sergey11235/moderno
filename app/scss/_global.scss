@@ -21,6 +21,30 @@ li {
   list-style: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
 body {
   font-family: 'Roboto-Regular', sans-serif;
   font-size: 15px;
@@ -48,7 +72,7 @@ body {
 
 }
 
-.title{
+.title {
   text-align: center;
   color: $bg;
   @include f700;
@@ -57,14 +81,16 @@ body {
   margin-bottom: 30px;
 }
 
-.rate-star{
+.rate-star {
   display: inline-block;
   margin-right: 13px;
 }
-.angle-right{
+
+.angle-right {
   position: relative;
   padding-left: 15px;
-  &::before{
+
+  &::before {
     content: "\f105";
     font-family: 'icomoon';
     position: absolute;
