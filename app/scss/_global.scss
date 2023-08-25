@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -21,10 +26,8 @@ li {
   list-style: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
+// прижать footer книзу
 
 html,
 body {
@@ -37,7 +40,7 @@ body {
   height: 100%;
 }
 
-.page-content {
+.content {
   flex: 1 0 auto;
 }
 
@@ -45,12 +48,15 @@ body {
   flex: 0 0 auto;
 }
 
+// прижать footer книзу
+
 body {
   font-family: 'Roboto-Regular', sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: $text;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .container {
