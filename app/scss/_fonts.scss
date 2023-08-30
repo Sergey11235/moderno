@@ -34,6 +34,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\f002";
+}
+
 .icon-envelope-o:before {
   content: "\f003";
 }
@@ -124,6 +128,14 @@
 
 .icon-unsorted:before {
   content: "\f0dc";
+}
+
+.icon-sort-desc:before {
+  content: "\f0dd";
+}
+
+.icon-sort-down:before {
+  content: "\f0dd";
 }
 
 .icon-linkedin:before {
