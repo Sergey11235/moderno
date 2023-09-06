@@ -27,11 +27,12 @@ li {
 }
 
 
-// прижать footer книзу
+// start прижать footer книзу
 
 html,
 body {
   height: 100%;
+  background-color: $grey;
 }
 
 .wrapper {
@@ -48,7 +49,7 @@ body {
   flex: 0 0 auto;
 }
 
-// прижать footer книзу
+// end прижать footer книзу
 
 body {
   font-family: 'Roboto-Regular', sans-serif;
