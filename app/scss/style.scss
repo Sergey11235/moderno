@@ -372,13 +372,14 @@
   width: 100%;
   padding-top: 90px;
   padding-bottom: 100px;
+  display: none;
 }
 
 .login__title {
   text-align: center;
   font-size: 48px;
   margin-bottom: 40px;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   @include f700;
 }
@@ -391,7 +392,8 @@
 
   label {
     position: relative;
-
+    display: block;
+    width: 100%;
     &::before {
       position: absolute;
       font-family: 'icomoon';
@@ -451,7 +453,7 @@
 
 .creat-acc {
   margin-top: 19px;
-  padding: 15px 0 15px 28px;
+  padding: 15px 0px 15px 28px;
   text-align: center;
   width: 244px;
   background-color: #76ae36;
@@ -464,7 +466,7 @@
     position: absolute;
     top: 15px;
     left: 35px;
-    font-family: icomoon;
+    font-family: 'icomoon';
   }
 }
 
@@ -547,11 +549,11 @@
   display: flex;
   align-items: center;
   height: 60px;
+  
 }
 
-
-.breadcrumbs__inner {
-  display: inline-block;
+.breadcrumbs__inner{
+  text-align-last: left;
 }
 
 .breadcrumbs__list {
@@ -707,6 +709,22 @@
       color: #fff;
     }
   }
+}
+.aside__item{
+  background-color: #fff;
+  border: 1px solid #dedede;
+  padding: 0 32px 32px;
+  margin-bottom: 30px;
+  width: 270px;
+}
+
+.aside__title{
+  border-bottom: 1px solid #dedede;
+  font-size: 20px;
+  color: #263238;
+  padding: 22px 0 19px;
+  font-family: 'Poboto', sans-serif;
+  font-weight: 700;
 }
 
 // end products
@@ -1313,7 +1331,7 @@
   button {
     margin-bottom: 7px;
     box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
-    bottom: none;
+    border: none;
     background-color: $text;
     color: #fff;
     font-size: 16px;
@@ -1348,22 +1366,24 @@
 
 .author__avatar {
   margin-right: 14px;
+  margin-top: 6px;
 }
 
 .author__name {
   font-size: 18px;
+  @include f500;
   color: $bg;
-  margin-bottom: 2px;
+  margin-bottom: 14px;
 }
 
 .author__info-link {
   color: #707070;
   font-size: 13px;
-  padding: 6px 9px 5px;
+  padding: 3px 15px;
   border: 1px solid #d6d6d6;
 }
 
-.author__awords-list {
+.author__awards-list {
   li {
     display: inline-block;
     color: #fff;
@@ -1382,13 +1402,38 @@
       margin-left: 4px;
     }
   }
+    .icon-meh-o{
+      background-image: url(../images/awards/awards-orange.png);
+      width: 34px;
+      height: 37px;
+    }
+    .icon-pagelines{
+      background-image: url(../images/awards/awards-red.png);
+      width: 34px;
+      height: 37px;
+    }
+    .icon-flash{
+      background-image: url(../images/awards/awards-blue.png);
+      width: 34px;
+      height: 37px;
+    }
+    .icon-foursquare{
+      background-image: url(../images/awards/awards-green.png);
+      width: 34px;
+      height: 37px;
+    }
+    .icon-yen{
+      background-image: url(../images/awards/awards-grey.png);
+      width: 34px;
+      height: 37px;
+    }
 }
 
 
 .aside__item-sales {
   padding-top: 23px;
   font-size: 16px;
-  @include f500;
+  @include f300;
   color: #707070;
 
   span {
@@ -1762,6 +1807,11 @@
 
 // end settings
 
+// start profile
+
+
+
+// end profile
 
 
 
