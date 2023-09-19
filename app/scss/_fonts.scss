@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?b7ulw4');
-  src: url('../fonts/icomoon.eot?b7ulw4#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?b7ulw4') format('truetype'),
-    url('../fonts/icomoon.woff?b7ulw4') format('woff'),
-    url('../fonts/icomoon.svg?b7ulw4#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?m6rgw2');
+  src: url('../fonts/icomoon.eot?m6rgw2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?m6rgw2') format('truetype'),
+    url('../fonts/icomoon.woff?m6rgw2') format('woff'),
+    url('../fonts/icomoon.svg?m6rgw2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -122,6 +122,10 @@
   content: "\f0c0";
 }
 
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+
 .icon-sort:before {
   content: "\f0dc";
 }
@@ -131,10 +135,6 @@
 }
 
 .icon-sort-desc:before {
-  content: "\f0dd";
-}
-
-.icon-sort-down:before {
   content: "\f0dd";
 }
 
