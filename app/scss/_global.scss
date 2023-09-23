@@ -94,6 +94,35 @@ body {
   margin-right: 13px;
 }
 
+.breadcrumbs{
+  &__inner{
+    padding: 45px 0 40px;
+    overflow: hidden;
+    width: 1200px;
+  }
+  &__list{
+    li{
+      display: inline-block;
+      position: relative;
+      &+li{
+        padding-left: 24px;
+        &::before{
+          content: '>';
+          position: absolute;
+          left: 6px;
+          color: $green;
+        }
+      }
+      &:last-child{
+        a,
+        span{
+          color: $bg;
+        }
+      }
+    }
+  }
+}
+
 .angle-right {
   position: relative;
   padding-left: 15px;
@@ -106,4 +135,8 @@ body {
     color: $green;
     font-size: 14px;
   }
+}
+
+#modal{
+    display: none;
 }
